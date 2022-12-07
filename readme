@@ -1,0 +1,44 @@
+## THis Project is Aboute Address Book
+ => here first user can create account and then login to that account and then,
+    create User,
+    Login User,
+    Add Contact,
+    Update contact,
+    Delete Contact,
+    Get Single Contact,
+    Get  All Contact,
+    Get Contact By Pagination
+
+=> So First you have to install the below given dependency 
+    npm i express validator mongoose jsonwentoken bcryptjs
+    npm i --dev-save nodemon
+
+=>Open the Project folder and type below given command in terminal
+    npm start
+
+=> open PostMen,here Provides the link for various Operations 
+
+1. Create User
+    http://localhost:3000/user/new
+
+2. Login the User with Token that is generated when you created User
+    Token can be Provided in body ,in params or in Header section 
+    http://localhost:3000/login
+
+3. Add contact - Add Token 
+    http://localhost:3000/contact/new
+
+4. Serach Contact By Name With CaseSentive Data - Add Token
+    http://localhost:3000/getcontact/Nisha
+
+5. Update Contact - by id -Add Token 
+    http://localhost:3000/updatecontact/6346fbd90855c784b97f3262
+
+6. Delete Contact - By id -Add Token 
+    http://localhost:3000/deletecontact/6346fc340855c784b97f3265
+
+7. Find Contact - By Pagination -Add Token
+    http://localhost:3000/getpage?page=1&size=5  if You don't add page and size bydefault it will took 
+
+8. Get All the Contacts -Add Token 
+    http://localhost:3000/allcontact
